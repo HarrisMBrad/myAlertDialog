@@ -1,7 +1,7 @@
 # **myAlertDialog**
 
 ### **Overview:**
-myAlertDialog is a modern web-based refactor of an Android-native `AlertDialog`, now built using React and Material-UI (MUI) libraries. This project provides a clean, customizable dialog component that allows users to confirm or cancel actions by selecting "Yes" or "No." Originally developed as part of an Android app, it has been reimagined to fit web development standards, offering a responsive and adaptable user interface.
+myAlertDialog is a modern web-based refactor of an Android-native `AlertDialog`, now built using React and Material-UI (MUI) libraries. This project provides a clean, customizable dialog component that allows users to confirm or cancel actions by selecting "Yes" or "No." Originally developed as part of an Android app, it has been reimagined to fit web development standards, offering a responsive and adaptable user interface. This app has android mobile files around it. 
 
 ### **Key Features:**
 - **Yes/No Confirmation Dialog:** The dialog allows users to confirm or cancel actions, making it ideal for decision-making prompts, warnings, or confirmations.
@@ -24,7 +24,7 @@ The myAlertDialog component opens when a button is clicked and presents the user
    ```bash
    git clone https://github.com/your-username/myAlertDialog.git
    ```
-2. Install the dependencies:
+2. Install the dependencies: (... into => web/js/alertdialogics)
    ```bash
    npm install
    ```
