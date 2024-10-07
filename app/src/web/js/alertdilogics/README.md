@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# **myAlertDialog**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### **Overview:**
+The current iteration of the **myAlertDialog** project focuses on building a simple, yet functional web application using React. It consists of two main components:
+- A button on the main page (`MainComponent`) that navigates to a form.
+- A form page (`FormPage`) where users can submit their input.
 
-## Available Scripts
+### **Key Changes:**
+- **Removed `RandomColorPage`:** The RandomColorPage, which previously displayed a random background color, has been removed for now.
+- **MainComponent:** The app starts with a button that leads users to the form page.
+- **FormPage:** Users can fill out and submit a form. The submission button currently gives users the experience that their form has been submitted.
 
-In the project directory, you can run:
+### **Current Features:**
+1. **MainComponent:**
+   - A simple button that, when clicked, navigates to the form page.
 
-### `npm start`
+2. **FormPage:**
+   - A form where users can input data.
+   - A submit button that allows users to submit their input, simulating a submission experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### **Technologies Used:**
+- **React**: For building the user interface.
+- **React Router (`react-router-dom`)**: For routing between different pages (MainComponent and FormPage).
+- **Material-UI (`@mui/material`)**: For modern, responsive UI components (button, form inputs).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### **Installation & Setup:**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/myAlertDialog.git
