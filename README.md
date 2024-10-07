@@ -1,28 +1,38 @@
 # **myAlertDialog**
 
 ### **Overview:**
-myAlertDialog is a modern web-based refactor of an Android-native `AlertDialog`, now built using React and Material-UI (MUI) libraries. This project provides a clean, customizable dialog component that allows users to confirm or cancel actions by selecting "Yes" or "No." Originally developed as part of an Android app, it has been reimagined to fit web development standards, offering a responsive and adaptable user interface. This app has android mobile files around it. 
 
-### **Key Features:**
-- **Yes/No Confirmation Dialog:** The dialog allows users to confirm or cancel actions, making it ideal for decision-making prompts, warnings, or confirmations.
-- **Material-UI Integration:** Utilizes Material-UI for a modern, responsive design, ensuring consistent cross-platform performance.
-- **State Management with React Hooks:** Leverages React's `useState` hook for managing the dialog's open/close behavior, ensuring a seamless user experience.
-- **Reusable Component:** The dialog is designed to be reusable across various applications, enabling developers to easily integrate it into their React projects.
+The current iteration of the **myAlertDialog** project focuses on building a simple, yet functional web application using React. It consists of two main components:
+- A button on the main page (`MainComponent`) that navigates to a form.
+- A form page (`FormPage`) where users can submit their input.
 
-### **How It Works:**
-The myAlertDialog component opens when a button is clicked and presents the user with two options:
-- **Yes:** Proceeds with the intended action (e.g., closing the application, deleting an item, etc.).
-- **No:** Cancels the action and closes the dialog.
+### **Key Changes:**
+- **Removed `RandomColorPage`:** The RandomColorPage, which previously displayed a random background color, has been removed for now.
+- **MainComponent:** The app starts with a button that leads users to the form page.
+- **FormPage:** Users can fill out and submit a form. The submission button currently gives users the experience that their form has been submitted.
+
+### **Current Features:**
+1. **MainComponent:**
+   - A simple button that, when clicked, navigates to the form page.
+
+2. **FormPage:**
+   - A form where users can input data.
+   - A submit button that allows users to submit their input, simulating a submission experience.
 
 ### **Technologies Used:**
+- **React**: For building the user interface.
+- **React Router (`react-router-dom`)**: For routing between different pages (MainComponent and FormPage).
+- **Material-UI (`@mui/material`)**: For modern, responsive UI components (button, form inputs).
+
 - **React**: For building the user interface and managing state.
 - **Material-UI (MUI)**: For modern and responsive dialog design.
-- **JavaScript (ES6+)**: Core logic implementation.
+- **JavaScript (ES6+)**: Core logic implem
 
 ### **Installation & Setup:**
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/myAlertDialog.git
+
    ```
 2. Install the dependencies: (... into => web/js/alertdialogics)
    ```bash
@@ -46,6 +56,4 @@ We welcome contributions to improve the myAlertDialog project! Feel free to open
 ### **License:**
 This project is licensed under the MIT License.
 
----
 
-This README now provides a clearer description of the project’s goals, features, and future development, reflecting the current status of your project!
