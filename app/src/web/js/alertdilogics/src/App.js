@@ -1,36 +1,57 @@
 import React, { useState } from "react";
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@mui/material';
 
+
 const MainComponent = () => {
   const [open, setOpen] = useState(false);
+  
 
   // Function to handle opening the dialog
-  const handleClickOpen = () => {
+  const HandleClickOpen = () => {
+    //
     setOpen(true);
   };
 
   // Function to handle closing the dialog
   const handleClose = (shouldExit) => {
     if (shouldExit) {
-      // Simulate exiting the application (or any other action you'd like to trigger)
-      console.log("Exiting the application...");
+    //
+      console.log("Login Page");
+    } else {
+      // Just close the dialog
+      setOpen(false);
     }
-    setOpen(false);
   };
 
   return (
     <div>
-      <Button variant="contained" color="primary" onClick={handleClickOpen}>
-        Show Dialog
-      </Button>
+      <div style={{ position: 'relative', height: '100vh' }}>
+        <Button 
+          variant="contained" 
+          color="primary" 
+          onClick={HandleClickOpen} 
+          style={{
+            position: 'absolute', 
+            left: '50%', 
+            transform: 'translate(-50%, 20%)',
+            bottom: '30%'
+          }}>
+          Show Dialog
+        </Button>
+      </div>
 
-      <Dialog open={open} onClose={() => handleClose(false)} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
+      <Dialog 
+        open={open} 
+        onClose={() => handleClose(false)} 
+        aria-labelledby="alert-dialog-title" 
+        aria-describedby="alert-dialog-description"
+      >
         <DialogTitle id="alert-dialog-title">
           {"Alert"} {/* You can replace this with your dynamic title */}
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            {"This is a confirmation dialog. Do you want to proceed?"} {/* Replace with your dynamic message */}
+            {"This is a confirmation dialog. Do you want to proceed?"}
           </DialogContentText>
         </DialogContent>
         <DialogActions>
@@ -47,3 +68,4 @@ const MainComponent = () => {
 };
 
 export default MainComponent;
+
