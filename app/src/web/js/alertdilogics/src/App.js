@@ -1,29 +1,7 @@
-import React, { useState } from "react";
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@mui/material';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import MainComponent from "./MainComponent/MainComponent";
 
 
-const MainComponent = () => {
-  const [open, setOpen] = useState(false);
-  
-
-  // Function to handle opening the dialog
-  const HandleClickOpen = () => {
-    //
-    setOpen(true);
-  };
-
-  // Function to handle closing the dialog
-  const handleClose = (shouldExit) => {
-    if (shouldExit) {
-    //
-      console.log("Login Page");
-    } else {
-      // Just close the dialog
-      setOpen(false);
-    }
-  };
-
-  return (
     <div>
       <div style={{ position: 'relative', height: '100vh' }}>
         <Button 
@@ -68,4 +46,6 @@ const MainComponent = () => {
 };
 
 export default MainComponent;
+
+
 
